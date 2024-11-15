@@ -8,6 +8,8 @@ on:
 
 jobs:
   clang-tidy:
+    permissions:
+      contents: read
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
